@@ -10,10 +10,9 @@ def func_get_var_a():
                 print("Принято значение А:")
                 return Var_a
             else : func_get_var_a()
-
             return
         except ValueError:
-            print("Вы ввели некорректные данные. Повторите ввод")
+            print("Вы ввели некорректные данные. Повторите ввод.")
 
 def func_get_var_b():
     while True:
@@ -24,14 +23,12 @@ def func_get_var_b():
                 print("Значение принято B:")
                 return Var_b
             else : func_get_var_b()
-            # return Var_b
             return
         except ValueError:
-            print("Вы ввели некорректные данные. Повторите ввод")
+            print("Вы ввели некорректные данные. Повторите ввод.")
 
 print (func_get_var_a()) # Вызов функции назначения А
 print (func_get_var_b()) # Вызов функции назначения B
-
 
 sum_list = [Var_a,Var_b] # формирую список
 sum_vars = sum(sum_list) # Получаю сумму
